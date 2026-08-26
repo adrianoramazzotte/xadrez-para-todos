@@ -41,6 +41,29 @@ Somente empresas **contribuintes de ICMS**, **estabelecidas no Paraná** e
 tributadas pelo **Lucro Real** podem destinar recursos via Proesporte.
 Esse recorte está explícito no hero e na seção de elegibilidade.
 
+## Fotos das competições
+
+As galerias ficam em `galeria.html?c=<categoria>` e leem o arquivo `fotos/fotos.json`.
+
+Pastas (uma por competição):
+
+```
+fotos/mundial/        Mundiais (ISF U15, Mundial de Cadetes FIDE)
+fotos/pan/            Pan-Americanos
+fotos/sulamericano/   Sul-Americanos
+fotos/olimpiadas/     Olimpíadas
+fotos/brasileiros/    Campeonatos brasileiros
+```
+
+**Para publicar fotos novas:**
+
+1. Copie as imagens (`.jpg`, `.png`, `.webp`) para a pasta da competição.
+2. Rode `./atualizar-fotos.sh` — ele varre as pastas e regenera `fotos/fotos.json`.
+3. `git add -A && git commit -m "fotos" && git push`
+
+Enquanto uma pasta estiver vazia, a galeria mostra o estado "Fotos em breve".
+Prefira imagens já redimensionadas (largura de ~1600px) para a página carregar rápido.
+
 ## Contato
 
 Ana Carmen Ramazzotte Monteiro — Presidente
