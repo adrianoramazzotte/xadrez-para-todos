@@ -61,10 +61,12 @@ header{
   display:grid;place-items:center;line-height:1;flex:0 0 auto}
 .mark svg{width:18px;height:auto;display:block}
 .brand small{display:block;font-weight:400;font-size:11.5px;color:var(--muted-dark);letter-spacing:.02em}
-.nav-links{margin-left:auto;display:flex;gap:26px;align-items:center}
-.nav-links a{color:var(--muted-dark);text-decoration:none;font-size:14.5px;font-weight:500}
+.nav-links{margin-left:auto;display:flex;gap:22px;align-items:center}
+.nav-links a{color:var(--muted-dark);text-decoration:none;font-size:14.5px;font-weight:500;white-space:nowrap}
 .nav-links a:hover{color:var(--cream)}
-@media(max-width:900px){.nav-links a:not(.btn){display:none}}
+@media(max-width:1180px){.nav-links{gap:18px}.nav-links a{font-size:14px}}
+@media(max-width:1080px){.nav-links a[href="#como-funciona"]{display:none}}
+@media(max-width:960px){.nav-links a:not(.btn){display:none}}
 
 .btn{
   display:inline-flex;align-items:center;gap:9px;padding:13px 22px;border-radius:999px;
@@ -330,6 +332,23 @@ details p{margin-top:12px;padding-left:28px;font-size:15.5px;color:var(--muted)}
 .chips li.mod{color:var(--muted-dark);border-color:var(--line-dark);font-weight:500}
 @media(max-width:860px){.bra{grid-template-columns:1fr;gap:28px;padding:28px}}
 
+.verif{margin-top:20px;border:1px solid var(--line-dark);border-radius:var(--r);overflow:hidden}
+.verif .vh{padding:22px 26px;border-bottom:1px solid var(--line-dark);background:rgba(246,241,231,.03)}
+.verif .vh b{display:block;color:var(--cream);font-size:16px;font-weight:600}
+.verif .vh span{display:block;margin-top:5px;font-size:14px;color:var(--muted-dark)}
+.verif ul{list-style:none;margin:0;padding:0}
+.verif li{display:flex;flex-wrap:wrap;align-items:baseline;gap:8px 18px;padding:15px 26px;border-bottom:1px solid var(--line-dark);font-size:14.5px}
+.verif li:last-child{border-bottom:0}
+.verif .nome{color:var(--cream);font-weight:500;min-width:250px;flex:1}
+.verif code{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:13px;color:var(--muted-dark);white-space:nowrap}
+.verif code b{color:var(--gold-soft);font-weight:600}
+.verif a code b{border-bottom:1px solid rgba(232,191,101,.4)}
+.verif a:hover code b{color:var(--cream);border-color:var(--cream)}
+.verif a{text-decoration:none}
+@media(max-width:620px){.verif li{padding:15px 20px}.verif .nome{min-width:100%}}
+
+.nota{margin-top:20px;font-size:14.5px;color:var(--muted-dark);border-left:3px solid var(--gold);padding-left:20px;max-width:78ch}
+
 .press{display:flex;flex-wrap:wrap;gap:10px;margin-top:22px}
 .press a{display:inline-flex;align-items:center;gap:9px;padding:11px 17px;border-radius:999px;
   border:1px solid var(--line-dark);text-decoration:none;font-size:13.5px;color:var(--muted-dark);max-width:100%}
@@ -361,7 +380,8 @@ footer a{color:var(--muted-dark)}
       <a href="#projeto">O projeto</a>
       <a href="#contrapartidas">Contrapartidas</a>
       <a href="#associacao">A equipe</a>
-      <a href="#duvidas">Dúvidas do contador</a>
+      <a href="#seriedade">Garantias</a>
+      <a href="#duvidas">Dúvidas</a>
       <a class="btn btn-gold" href="#contato">Quero apoiar</a>
     </nav>
   </div>
@@ -685,6 +705,56 @@ footer a{color:var(--muted-dark)}
   </div>
 </section>
 
+<section class="sec dark" id="seriedade" style="background:var(--ink)">
+  <div class="wrap">
+    <p class="eyebrow">Segurança para a empresa</p>
+    <h2>Isto não é uma promessa. É um projeto fiscalizado pelo Estado.</h2>
+    <p class="lead">Antes de falar de marca e visibilidade, um diretor financeiro precisa de garantias. As nossas não dependem da nossa palavra — todas podem ser conferidas por terceiros.</p>
+
+    <div class="grid g4">
+      <div class="card">
+        <span class="ico"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"><path d="M12 2.6l8 3.2v5.4c0 4.8-3.3 8.9-8 10.2-4.7-1.3-8-5.4-8-10.2V5.8z"/><path d="M8.6 12.2l2.4 2.4 4.4-4.6" stroke-linecap="round"/></svg></span>
+        <h3>Habilitação pública</h3>
+        <p>Aprovado e credenciado pela Secretaria de Estado do Esporte do Paraná no Edital nº 06/2025, sob o código 91327. A habilitação é ato público — qualquer pessoa pode conferir.</p>
+      </div>
+      <div class="card">
+        <span class="ico"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"><path d="M14 2.6H6.4A1.8 1.8 0 0 0 4.6 4.4v15.2a1.8 1.8 0 0 0 1.8 1.8h11.2a1.8 1.8 0 0 0 1.8-1.8V8.2z"/><path d="M14 2.6v5.6h5.4"/><path d="M8.4 13h7.2M8.4 17h4.6" stroke-linecap="round"/></svg></span>
+        <h3>Prestação de contas</h3>
+        <p>A execução é acompanhada pela Secretaria de Estado do Esporte. Os recursos têm destinação vinculada ao plano aprovado e comprovação documental obrigatória.</p>
+      </div>
+      <div class="card">
+        <span class="ico"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"><path d="M3.4 20.6h17.2"/><path d="M5.4 20.6V9.4h4.2v11.2M14.4 20.6V9.4h4.2v11.2"/><path d="M12 2.6 3.4 7.2h17.2z"/></svg></span>
+        <h3>Entidade formalizada</h3>
+        <p>Associação Soberano Rei — Xadrez Arapongas, CNPJ 52.542.855/0001-48, fundada em 2019, com sede na cidade e atividade ininterrupta desde então.</p>
+      </div>
+      <div class="card">
+        <span class="ico"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"><circle cx="12" cy="8.4" r="4.4"/><path d="M4.6 21.4a7.6 7.6 0 0 1 14.8 0"/><path d="M17.6 3.4l1.4 2.6 2.8.4-2 2 .5 2.8-2.5-1.3" stroke-linecap="round"/></svg></span>
+        <h3>Corpo técnico registrado</h3>
+        <p>Três árbitros com registro na Confederação Brasileira de Xadrez conduzem o trabalho. A formação dos atletas segue método, não improviso.</p>
+      </div>
+    </div>
+
+    <div class="verif">
+      <div class="vh">
+        <b>Nossos atletas têm registro oficial. Confira você mesmo.</b>
+        <span>Cada atleta possui identificação na Federação Internacional de Xadrez (FIDE) e na Confederação Brasileira de Xadrez (CBX). Os resultados são públicos e auditáveis.</span>
+      </div>
+      <ul>
+        <li><span class="nome">Esther Zilli Ramazzotte</span><a href="https://ratings.fide.com/profile/22730486" target="_blank" rel="noopener"><code>FIDE <b>22730486</b></code></a><code>CBX 50438</code></li>
+        <li><span class="nome">Samuel Ramazzotte Monteiro</span><a href="https://ratings.fide.com/profile/22730451" target="_blank" rel="noopener"><code>FIDE <b>22730451</b></code></a><code>CBX 48250</code></li>
+        <li><span class="nome">Helen Ramazzotte Monteiro</span><a href="https://ratings.fide.com/profile/22730699" target="_blank" rel="noopener"><code>FIDE <b>22730699</b></code></a><code>CBX 48249</code></li>
+        <li><span class="nome">Maicon Zilli Ramazzotte</span><a href="https://ratings.fide.com/profile/22738711" target="_blank" rel="noopener"><code>FIDE <b>22738711</b></code></a><code>CBX 50436</code></li>
+        <li><span class="nome">Daniel Alexandre Ramazzotte</span><a href="https://ratings.fide.com/profile/22729208" target="_blank" rel="noopener"><code>FIDE <b>22729208</b></code></a><code>CBX 48243</code></li>
+        <li><span class="nome">Rafaela Graziele Zilli Ramazzotte</span><code>CBX 50437</code></li>
+        <li><span class="nome">Ana Carmen Franco Ramazzotte Monteiro <span style="color:var(--muted-dark);font-weight:400">— árbitra</span></span><code>CBX ÁRBITRO 1071</code></li>
+        <li><span class="nome">Alexandre Franco Ramazzotte <span style="color:var(--muted-dark);font-weight:400">— árbitro</span></span><code>CBX ÁRBITRO 1073</code></li>
+      </ul>
+    </div>
+
+    <p class="nota">A execução do projeto e a prestação de contas são responsabilidade da entidade proponente perante a Secretaria de Estado do Esporte do Paraná. A empresa incentivadora destina o recurso, recebe as contrapartidas de marca e o relatório final — sem assumir a operação do projeto.</p>
+  </div>
+</section>
+
 <section class="sec" id="participar">
   <div class="wrap">
     <p class="eyebrow">Passo a passo</p>
@@ -730,6 +800,10 @@ footer a{color:var(--muted-dark)}
       <details>
         <summary>O projeto está mesmo aprovado?</summary>
         <p>Sim. O Xadrez para Todos foi aprovado e credenciado pela Secretaria de Estado do Esporte do Paraná pelo Edital nº 06/2025, sob o código 91327.</p>
+      </details>
+      <details>
+        <summary>Que garantia temos de que o recurso será bem aplicado?</summary>
+        <p>O projeto foi analisado e habilitado pela Secretaria de Estado do Esporte do Paraná antes de captar qualquer valor. A execução segue o plano aprovado, os recursos têm destinação vinculada e a prestação de contas é feita pela Associação diretamente ao Estado. A empresa incentivadora não administra o recurso nem responde pela operação do projeto.</p>
       </details>
       <details>
         <summary>Uma única empresa precisa bancar o valor todo?</summary>
