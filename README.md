@@ -43,6 +43,11 @@ Esse recorte está explícito no hero e na seção de elegibilidade.
 
 ## Fotos das competições
 
+> **Status:** as galerias estão prontas e funcionando, mas os links foram
+> removidos da página principal até haver fotos publicadas. Para reativar,
+> volte os cards de `.comp` para `<a href="galeria.html?c=CATEGORIA">` e
+> devolva a linha `<span class="ver">Ver fotos →</span>`.
+
 As galerias ficam em `galeria.html?c=<categoria>` e leem o arquivo `fotos/fotos.json`.
 
 Pastas (uma por competição):
