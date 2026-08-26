@@ -315,6 +315,21 @@ details p{margin-top:12px;padding-left:28px;font-size:15.5px;color:var(--muted)}
 .tecnicos b{display:block;color:var(--cream);font-size:15.5px;font-weight:600;margin-bottom:3px}
 @media(max-width:760px){.tecnicos ul{grid-template-columns:1fr}}
 
+.bra{margin-top:22px;border:1px solid rgba(200,149,43,.42);border-radius:var(--r);
+  background:linear-gradient(150deg,rgba(200,149,43,.14),rgba(200,149,43,.05));
+  padding:36px;display:grid;grid-template-columns:1.25fr 1fr;gap:44px;align-items:center}
+.bra .eyebrow{color:var(--gold-soft)}
+.bra h3{font-size:clamp(23px,3vw,31px);color:var(--cream);max-width:18ch}
+.bra p{margin-top:16px;font-size:15.5px;color:var(--muted-dark);max-width:52ch}
+.bra .verfotos{display:inline-flex;align-items:center;gap:8px;margin-top:22px;font-size:14.5px;
+  font-weight:600;color:var(--gold-soft);text-decoration:none;border-bottom:1px solid rgba(232,191,101,.45);padding-bottom:3px}
+.bra .verfotos:hover{color:var(--cream);border-color:var(--cream)}
+.chips{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:9px}
+.chips li{font-size:13.5px;font-weight:600;color:var(--gold-soft);
+  border:1px solid rgba(200,149,43,.4);background:rgba(18,16,14,.4);padding:8px 15px;border-radius:999px}
+.chips li.mod{color:var(--muted-dark);border-color:var(--line-dark);font-weight:500}
+@media(max-width:860px){.bra{grid-template-columns:1fr;gap:28px;padding:28px}}
+
 .press{display:flex;flex-wrap:wrap;gap:10px;margin-top:22px}
 .press a{display:inline-flex;align-items:center;gap:9px;padding:11px 17px;border-radius:999px;
   border:1px solid var(--line-dark);text-decoration:none;font-size:13.5px;color:var(--muted-dark);max-width:100%}
@@ -538,7 +553,7 @@ footer a{color:var(--muted-dark)}
     <div class="creds">
       <div><b>2</b><span>Mestres Nacionais formados na base da Associação</span></div>
       <div><b>7º</b><span>lugar no Mundial Escolar de 2025, na Sérvia</span></div>
-      <div><b>+20</b><span>títulos brasileiros por categoria conquistados até hoje</span></div>
+      <div><b>+20</b><span>títulos brasileiros em diversas categorias, de 2017 a 2026</span></div>
       <div><b>3</b><span>árbitros da Confederação Brasileira de Xadrez no corpo técnico</span></div>
     </div>
 
@@ -584,8 +599,9 @@ footer a{color:var(--muted-dark)}
         <ul>
           <li>7º lugar no Mundial Escolar ISF U15, Sérvia, 2025</li>
           <li>10º lugar no Mundial de Cadetes da FIDE, sub-10</li>
-          <li>Campeã brasileira sub-08 (2018 e 2019) e sub-10 feminino (2020)</li>
+          <li>4º lugar no Continental das Américas sub-10, 2020</li>
           <li>3º lugar no Sul-Americano, 2023</li>
+          <li>Campeã paranaense de convencional e de blitz, 2024</li>
         </ul>
       </div>
       <div class="atleta">
@@ -593,33 +609,33 @@ footer a{color:var(--muted-dark)}
         <ul>
           <li>9º lugar no Mundial Escolar ISF U15, Sérvia, 2025</li>
           <li>Integrante da Seleção Brasileira World Chess Cadets</li>
-          <li>Campeão brasileiro de blitz (2018 e 2023)</li>
-          <li>Vice-campeão brasileiro de blitz e de convencional, 2024</li>
+          <li>Campeão paranaense de convencional e de blitz, 2022</li>
+          <li>Campeão paranaense de blitz, 2024</li>
         </ul>
       </div>
       <div class="atleta">
         <h3>Helen Ramazzotte Monteiro</h3>
         <ul>
-          <li>Tricampeã brasileira sub-20 em 2024: convencional, rápido e blitz</li>
-          <li>Campeã brasileira sub-18 convencional, 2023</li>
           <li>3º lugar no Pan-Americano da Juventude sub-18 rápido, 2022</li>
           <li>3º lugar no Sul-Americano sub-18, rápido e blitz, 2023</li>
+          <li>Campeã paranaense sub-20 de convencional, 2024</li>
+          <li>Campeã da rápida nos JOJUPS — Jogos da Juventude do PR, 2023</li>
         </ul>
       </div>
       <div class="atleta">
         <h3>Maicon Zilli Ramazzotte</h3>
         <span class="mn">Mestre Nacional</span>
         <ul>
-          <li>Campeão brasileiro por equipe, 2022</li>
-          <li>Campeão brasileiro de blitz, 2023</li>
-          <li>Campeão brasileiro de rápido, 2024</li>
-          <li>Vice-campeão paranaense convencional, 2024</li>
+          <li>Título de Mestre Nacional conquistado em 2020</li>
+          <li>Vice-campeão paranaense de convencional, 2024</li>
+          <li>3º lugar por equipe nos JOJUPS, 2023</li>
+          <li>Campeão do Circuito Maringaense de Xadrez Rápido sub-14</li>
         </ul>
       </div>
       <div class="atleta">
         <h3>Daniel Alexandre Ramazzotte</h3>
         <ul>
-          <li>Campeão londrinense sub-14 convencional</li>
+          <li>Campeão londrinense sub-14 de convencional</li>
           <li>Campeão geral do Circuito Pé Vermelho sub-14</li>
           <li>4º lugar no Campeonato Paranaense Absoluto sub-14</li>
         </ul>
@@ -628,10 +644,24 @@ footer a{color:var(--muted-dark)}
         <h3>Rafaela Graziele Zilli Ramazzotte</h3>
         <ul>
           <li>Campeã paranaense absoluta sub-10</li>
-          <li>Vice-campeã brasileira escolar de blitz</li>
+          <li>Campeã londrinense sub-10, de convencional e de rápido</li>
           <li>Campeã macrorregional dos Jogos Escolares do Paraná</li>
         </ul>
       </div>
+    </div>
+
+    <div class="bra">
+      <div>
+        <p class="eyebrow">Campeonatos brasileiros</p>
+        <h3>Mais de 20 títulos brasileiros, de 2017 a 2026.</h3>
+        <p>Desde 2017 atletas da Associação sobem ao pódio nacional em diferentes categorias — do sub-08 ao sub-20 — nas modalidades convencional, rápido e blitz, e também na disputa por equipe.</p>
+        <a class="verfotos" href="galeria.html?c=brasileiros">Ver as fotos dos brasileiros &#8594;</a>
+      </div>
+      <ul class="chips">
+        <li>sub-08</li><li>sub-10</li><li>sub-12</li><li>sub-14</li>
+        <li>sub-16</li><li>sub-18</li><li>sub-20</li><li>por equipe</li>
+        <li class="mod">convencional</li><li class="mod">rápido</li><li class="mod">blitz</li>
+      </ul>
     </div>
 
     <div class="tecnicos">
