@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Xadrez para Todos — Proesporte PR | Associação Soberano Rei</title>
+<meta name="description" content="Empresas do Paraná no Lucro Real podem destinar parte do ICMS a recolher para o projeto Xadrez para Todos, em Arapongas. 180 crianças, adolescentes e adultos atendidos gratuitamente em 2026.">
+<meta name="theme-color" content="#12100e">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Xadrez para Todos — transforme ICMS em futuro">
+<meta property="og:description" content="Projeto credenciado pela Secretaria de Estado do Esporte do Paraná (Edital 06/2025 · 91327). Sua empresa direciona parte do ICMS a recolher e vincula a marca a 180 atendidos em Arapongas.">
+<meta property="og:locale" content="pt_BR">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' fill='%2312100e'/%3E%3Ctext y='74' x='50' font-size='72' text-anchor='middle'%3E%E2%99%9E%3C/text%3E%3C/svg%3E">
+<style>
+:root{
+  --ink:#12100e;
+  --ink-2:#1c1916;
+  --cream:#f6f1e7;
+  --cream-2:#efe7d8;
+  --paper:#fffdf9;
+  --gold:#c8952b;
+  --gold-soft:#e8bf65;
+  --line:rgba(18,16,14,.12);
+  --line-dark:rgba(246,241,231,.14);
+  --muted:#6b625a;
+  --muted-dark:#a79f95;
+  --max:1140px;
+  --r:14px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0;background:var(--paper);color:var(--ink);
+  font-family:'Inter',system-ui,-apple-system,Segoe UI,Roboto,sans-serif;
+  font-size:17px;line-height:1.65;-webkit-font-smoothing:antialiased;
+}
+h1,h2,h3{font-family:'Fraunces','Georgia',serif;font-weight:600;line-height:1.12;letter-spacing:-.015em;margin:0}
+p{margin:0}
+a{color:inherit}
+img,svg{max-width:100%}
+.wrap{max-width:var(--max);margin:0 auto;padding:0 24px}
+.sec{padding:88px 0}
+.eyebrow{
+  font-size:12px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;
+  color:var(--gold);margin-bottom:18px;
+}
+.lead{font-size:19px;color:var(--muted);max-width:62ch}
+.dark .lead{color:var(--muted-dark)}
+
+/* ---------- nav ---------- */
+header{
+  position:sticky;top:0;z-index:50;background:rgba(18,16,14,.92);
+  backdrop-filter:blur(10px);border-bottom:1px solid var(--line-dark);
+}
+.nav{display:flex;align-items:center;gap:16px;height:66px}
+.brand{display:flex;align-items:center;gap:11px;color:var(--cream);text-decoration:none;font-weight:600;font-size:15px}
+.mark{width:32px;height:32px;border-radius:8px;background:var(--gold);color:var(--ink);
+  display:grid;place-items:center;font-size:19px;line-height:1;flex:0 0 auto}
+.brand small{display:block;font-weight:400;font-size:11.5px;color:var(--muted-dark);letter-spacing:.02em}
+.nav-links{margin-left:auto;display:flex;gap:26px;align-items:center}
+.nav-links a{color:var(--muted-dark);text-decoration:none;font-size:14.5px;font-weight:500}
+.nav-links a:hover{color:var(--cream)}
+@media(max-width:900px){.nav-links a:not(.btn){display:none}}
+
+.btn{
+  display:inline-flex;align-items:center;gap:9px;padding:13px 22px;border-radius:999px;
+  font-weight:600;font-size:15px;text-decoration:none;border:1px solid transparent;
+  transition:transform .15s ease,box-shadow .15s ease,background .15s ease;white-space:nowrap;
+}
+.btn:hover{transform:translateY(-1px)}
+.btn-gold{background:var(--gold);color:#1a1509;box-shadow:0 6px 22px rgba(200,149,43,.28)}
+.btn-gold:hover{background:var(--gold-soft)}
+.btn-ghost{border-color:var(--line-dark);color:var(--cream)}
+.btn-ghost:hover{background:rgba(246,241,231,.07)}
+.btn-outline{border-color:var(--line);color:var(--ink)}
+.btn-outline:hover{background:var(--cream-2)}
+.nav .btn{padding:10px 18px;font-size:14px}
+
+/* ---------- hero ---------- */
+.hero{position:relative;background:var(--ink);color:var(--cream);overflow:hidden;padding:96px 0 0}
+.hero:before{
+  content:"";position:absolute;inset:0;opacity:.055;
+  background-image:linear-gradient(45deg,var(--cream) 25%,transparent 25%,transparent 75%,var(--cream) 75%),
+                   linear-gradient(45deg,var(--cream) 25%,transparent 25%,transparent 75%,var(--cream) 75%);
+  background-size:120px 120px;background-position:0 0,60px 60px;
+  -webkit-mask-image:radial-gradient(120% 90% at 78% 8%,#000 0%,transparent 68%);
+  mask-image:radial-gradient(120% 90% at 78% 8%,#000 0%,transparent 68%);
+}
+.hero .wrap{position:relative}
+.badge{
+  display:inline-flex;align-items:center;gap:10px;padding:7px 15px;border-radius:999px;
+  border:1px solid var(--line-dark);background:rgba(246,241,231,.05);
+  font-size:13px;color:var(--cream);margin-bottom:26px;
+}
+.badge b{color:var(--gold-soft);font-weight:600}
+.hero h1{font-size:clamp(38px,6vw,68px);max-width:16ch;color:var(--cream)}
+.hero h1 em{font-style:normal;color:var(--gold-soft)}
+.hero .lead{margin-top:24px;font-size:20px;color:#cdc4b8}
+.cta-row{display:flex;flex-wrap:wrap;gap:13px;margin-top:36px}
+.hero-note{margin-top:20px;font-size:13.5px;color:var(--muted-dark)}
+
+.stats{
+  display:grid;grid-template-columns:repeat(4,1fr);gap:1px;margin-top:72px;
+  background:var(--line-dark);border-top:1px solid var(--line-dark);
+}
+.stat{background:var(--ink);padding:28px 4px 34px}
+.stat b{display:block;font-family:'Fraunces',serif;font-size:clamp(26px,3.4vw,38px);color:var(--gold-soft);font-weight:600;line-height:1}
+.stat span{display:block;margin-top:9px;font-size:13.5px;color:var(--muted-dark);max-width:22ch}
+@media(max-width:760px){.stats{grid-template-columns:repeat(2,1fr)}}
+
+/* ---------- mechanism ---------- */
+.dark{background:var(--ink-2);color:var(--cream)}
+.dark h2{color:var(--cream)}
+h2{font-size:clamp(29px,4vw,43px);max-width:20ch}
+.sec > .wrap > .lead{margin-top:20px}
+
+.flow{display:grid;grid-template-columns:1fr auto 1fr auto 1fr;align-items:stretch;gap:0;margin-top:52px}
+.node{
+  border:1px solid var(--line-dark);border-radius:var(--r);padding:26px 24px;background:rgba(246,241,231,.03);
+}
+.node .n{font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--gold);font-weight:600}
+.node h3{font-size:20px;margin:12px 0 10px;color:var(--cream)}
+.node p{font-size:14.5px;color:var(--muted-dark)}
+.node.hi{background:rgba(200,149,43,.09);border-color:rgba(200,149,43,.4)}
+.arrow{display:grid;place-items:center;padding:0 16px;color:var(--gold);font-size:22px}
+@media(max-width:860px){
+  .flow{grid-template-columns:1fr}
+  .arrow{padding:12px 0;transform:rotate(90deg)}
+}
+.contrast{
+  margin-top:46px;display:grid;grid-template-columns:1fr 1fr;gap:18px;
+}
+.contrast > div{border:1px solid var(--line-dark);border-radius:var(--r);padding:24px}
+.contrast .no{opacity:.62}
+.contrast h4{margin:0 0 8px;font-size:15px;font-weight:600;letter-spacing:.02em}
+.contrast p{font-size:15px;color:var(--muted-dark)}
+.contrast .yes{border-color:rgba(200,149,43,.45);background:rgba(200,149,43,.07)}
+.contrast .yes h4{color:var(--gold-soft)}
+@media(max-width:700px){.contrast{grid-template-columns:1fr}}
+
+/* ---------- eligibility ---------- */
+.elig{
+  background:var(--cream);border:1px solid var(--line);border-radius:var(--r);
+  padding:36px;display:grid;grid-template-columns:1.1fr 1fr;gap:40px;align-items:center;margin-top:8px;
+}
+.elig h3{font-size:26px}
+.check{list-style:none;margin:22px 0 0;padding:0;display:grid;gap:13px}
+.check li{display:flex;gap:12px;align-items:flex-start;font-size:16px}
+.check li:before{
+  content:"";flex:0 0 auto;width:21px;height:21px;border-radius:50%;margin-top:2px;
+  background:var(--gold);
+  -webkit-mask:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><path d='M20 6L9 17l-5-5' fill='none' stroke='black' stroke-width='3.2' stroke-linecap='round' stroke-linejoin='round'/></svg>") center/15px no-repeat;
+  mask:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><path d='M20 6L9 17l-5-5' fill='none' stroke='black' stroke-width='3.2' stroke-linecap='round' stroke-linejoin='round'/></svg>") center/15px no-repeat;
+}
+.elig-aside{border-left:3px solid var(--gold);padding-left:22px}
+.elig-aside p{font-size:15.5px;color:var(--muted)}
+@media(max-width:820px){.elig{grid-template-columns:1fr;padding:28px;gap:26px}.elig-aside{border-left:none;border-top:3px solid var(--gold);padding:22px 0 0}}
+
+/* ---------- cards ---------- */
+.grid{display:grid;gap:18px;margin-top:48px}
+.g3{grid-template-columns:repeat(3,1fr)}
+.g4{grid-template-columns:repeat(4,1fr)}
+@media(max-width:900px){.g3,.g4{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:620px){.g3,.g4{grid-template-columns:1fr}}
+.card{border:1px solid var(--line);border-radius:var(--r);padding:26px;background:var(--paper)}
+.dark .card{border-color:var(--line-dark);background:rgba(246,241,231,.03)}
+.card .ico{font-size:26px;line-height:1;margin-bottom:16px;display:block}
+.card h3{font-size:19px;margin-bottom:10px}
+.card p{font-size:15px;color:var(--muted)}
+.dark .card p{color:var(--muted-dark)}
+
+/* ---------- audience ---------- */
+.aud{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:46px}
+.aud div{
+  border:1px solid var(--line);border-radius:var(--r);padding:30px 26px;background:var(--cream);
+}
+.aud b{display:block;font-family:'Fraunces',serif;font-size:48px;line-height:1;font-weight:600}
+.aud span{display:block;margin-top:10px;font-size:15.5px;color:var(--muted)}
+@media(max-width:760px){.aud{grid-template-columns:1fr}}
+.meta{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:22px}
+.meta div{padding:20px 0;border-top:1px solid var(--line)}
+.meta dt{font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--gold);font-weight:600;margin-bottom:7px}
+.meta dd{margin:0;font-size:15.5px}
+@media(max-width:760px){.meta{grid-template-columns:1fr;gap:0}}
+
+/* ---------- budget ---------- */
+.budget{display:grid;grid-template-columns:.85fr 1.15fr;gap:48px;align-items:start;margin-top:46px}
+.amount{font-family:'Fraunces',serif;font-size:clamp(42px,6vw,64px);font-weight:600;line-height:1;color:var(--gold-soft)}
+.amount small{display:block;font-family:'Inter',sans-serif;font-size:14px;font-weight:500;color:var(--muted-dark);margin-bottom:12px;letter-spacing:.04em;text-transform:uppercase}
+.items{list-style:none;margin:0;padding:0;display:grid}
+.items li{display:flex;gap:16px;align-items:center;padding:15px 0;border-bottom:1px solid var(--line-dark);font-size:16px}
+.items li span:first-child{font-size:20px;width:28px;text-align:center;flex:0 0 auto}
+@media(max-width:820px){.budget{grid-template-columns:1fr;gap:28px}}
+
+/* ---------- steps ---------- */
+.steps{counter-reset:s;display:grid;gap:0;margin-top:46px;max-width:820px}
+.step{counter-increment:s;display:grid;grid-template-columns:auto 1fr;gap:22px;padding:26px 0;border-top:1px solid var(--line)}
+.step:before{
+  content:counter(s);font-family:'Fraunces',serif;font-size:19px;font-weight:600;
+  width:42px;height:42px;border-radius:50%;display:grid;place-items:center;
+  border:1px solid var(--gold);color:var(--gold);
+}
+.step h3{font-size:19px;margin-bottom:7px}
+.step p{font-size:15.5px;color:var(--muted)}
+
+/* ---------- faq ---------- */
+details{border-bottom:1px solid var(--line);padding:20px 0}
+summary{cursor:pointer;font-weight:600;font-size:17px;list-style:none;display:flex;gap:14px;align-items:flex-start}
+summary::-webkit-details-marker{display:none}
+summary:before{content:"+";color:var(--gold);font-weight:700;font-size:20px;line-height:1.3;flex:0 0 auto}
+details[open] summary:before{content:"−"}
+details p{margin-top:12px;padding-left:28px;font-size:15.5px;color:var(--muted)}
+.faq{max-width:820px;margin-top:36px}
+
+/* ---------- final cta ---------- */
+.final{background:var(--ink);color:var(--cream);text-align:center}
+.final h2{margin:0 auto;color:var(--cream)}
+.final .lead{margin:22px auto 0;color:#cdc4b8;text-align:center}
+.final .cta-row{justify-content:center}
+.contact{
+  margin-top:52px;display:grid;grid-template-columns:repeat(3,1fr);gap:1px;
+  background:var(--line-dark);border:1px solid var(--line-dark);border-radius:var(--r);overflow:hidden;text-align:left;
+}
+.contact a,.contact div{background:var(--ink);padding:24px;text-decoration:none;display:block}
+.contact dt{font-size:11.5px;letter-spacing:.13em;text-transform:uppercase;color:var(--muted-dark);margin-bottom:7px}
+.contact dd{margin:0;font-size:16px;font-weight:500;color:var(--cream)}
+.contact a:hover{background:var(--ink-2)}
+@media(max-width:760px){.contact{grid-template-columns:1fr}}
+
+footer{background:var(--ink);color:var(--muted-dark);border-top:1px solid var(--line-dark);padding:40px 0;font-size:13.5px}
+.foot{display:flex;flex-wrap:wrap;gap:18px;justify-content:space-between;align-items:center}
+footer a{color:var(--muted-dark)}
+
+.float{
+  position:fixed;right:20px;bottom:20px;z-index:60;
+  background:#25d366;color:#0b3d24;box-shadow:0 8px 26px rgba(0,0,0,.28);
+}
+@media(max-width:600px){.float{right:14px;bottom:14px;padding:12px 18px;font-size:14px}}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap nav">
+    <a class="brand" href="#topo">
+      <span class="mark">&#9822;</span>
+      <span>Xadrez para Todos<small>Associação Soberano Rei · Arapongas</small></span>
+    </a>
+    <nav class="nav-links">
+      <a href="#como-funciona">Como funciona</a>
+      <a href="#projeto">O projeto</a>
+      <a href="#contrapartidas">Contrapartidas</a>
+      <a href="#duvidas">Dúvidas do contador</a>
+      <a class="btn btn-gold" href="#contato">Quero apoiar</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero" id="topo">
+  <div class="wrap">
+    <span class="badge">Proesporte · Secretaria de Estado do Esporte do Paraná · Edital nº 06/2025 · Projeto <b>91327</b></span>
+    <h1>Sua empresa já paga esse ICMS. <em>Escolha onde ele vai parar.</em></h1>
+    <p class="lead">O Proesporte permite que empresas paranaenses no Lucro Real direcionem parte do ICMS a recolher para projetos esportivos credenciados pelo Estado. O <b>Xadrez para Todos</b> leva xadrez gratuito a 180 crianças, adolescentes e adultos de Arapongas em 2026 — e leva a marca da sua empresa junto.</p>
+    <div class="cta-row">
+      <a class="btn btn-gold" href="#contato">Falar com a Associação</a>
+      <a class="btn btn-ghost" href="#como-funciona">Entender o mecanismo</a>
+    </div>
+    <p class="hero-note">Elegibilidade: empresas contribuintes de ICMS estabelecidas no Paraná e tributadas pelo Lucro Real.</p>
+
+    <div class="stats">
+      <div class="stat"><b>180</b><span>pessoas atendidas gratuitamente</span></div>
+      <div class="stat"><b>R$ 74.648</b><span>valor total do projeto</span></div>
+      <div class="stat"><b>11 meses</b><span>de atividades, fev a dez de 2026</span></div>
+      <div class="stat"><b>2019</b><span>ano de fundação da Associação</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="sec dark" id="como-funciona">
+  <div class="wrap">
+    <p class="eyebrow">Como funciona</p>
+    <h2>Não é doação. É destinação de imposto.</h2>
+    <p class="lead">O recurso já seria recolhido ao Estado do Paraná. O Proesporte apenas permite que a sua empresa decida que uma parte dele fique no seu próprio município, dentro de um projeto esportivo e social credenciado — com a sua marca vinculada.</p>
+
+    <div class="flow">
+      <div class="node">
+        <span class="n">Hoje</span>
+        <h3>ICMS a recolher</h3>
+        <p>Sua empresa apura o ICMS do período e recolhe integralmente ao Estado.</p>
+      </div>
+      <div class="arrow">&#8594;</div>
+      <div class="node hi">
+        <span class="n">Com o Proesporte</span>
+        <h3>Você declara a destinação</h3>
+        <p>O setor contábil faz o cadastro e a declaração no sistema da Secretaria de Estado do Esporte, indicando o projeto 91327.</p>
+      </div>
+      <div class="arrow">&#8594;</div>
+      <div class="node">
+        <span class="n">Resultado</span>
+        <h3>Xadrez para Todos</h3>
+        <p>O valor chega ao projeto em Arapongas e a marca da empresa passa a constar como incentivadora.</p>
+      </div>
+    </div>
+
+    <div class="contrast">
+      <div class="no">
+        <h4>O que NÃO é</h4>
+        <p>Não é doação a fundo perdido, não é contribuição extra sobre o caixa e não é despesa nova no orçamento da empresa.</p>
+      </div>
+      <div class="yes">
+        <h4>O que É</h4>
+        <p>É o redirecionamento de um valor que já sairia da empresa como imposto, agora com destino escolhido, prestação de contas ao Estado e retorno de imagem para a marca.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sec">
+  <div class="wrap">
+    <div class="elig">
+      <div>
+        <p class="eyebrow">Elegibilidade</p>
+        <h3>Sua empresa se enquadra?</h3>
+        <ul class="check">
+          <li>É contribuinte de <b>ICMS</b></li>
+          <li>Está <b>estabelecida no Estado do Paraná</b></li>
+          <li>É tributada pelo regime de <b>Lucro Real</b></li>
+        </ul>
+      </div>
+      <div class="elig-aside">
+        <p>Se os três itens forem verdadeiros, a empresa pode destinar recursos ao projeto. O percentual permitido e os prazos são definidos pela legislação estadual e confirmados pelo próprio sistema da Secretaria no momento da declaração — enviamos os materiais oficiais com o passo a passo para o seu setor contábil.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sec dark" id="projeto">
+  <div class="wrap">
+    <p class="eyebrow">O projeto</p>
+    <h2>180 pessoas de Arapongas, sem custo nenhum para elas.</h2>
+    <p class="lead">Aulas gratuitas de iniciação e formação esportiva em xadrez, mais participação em campeonatos, ao longo de todo o ano de 2026.</p>
+
+    <div class="aud">
+      <div><b>80</b><span>crianças de até 12 anos</span></div>
+      <div><b>80</b><span>adolescentes de 12 a 18 anos</span></div>
+      <div><b>20</b><span>adultos, incluindo pessoas com deficiência</span></div>
+    </div>
+
+    <dl class="meta">
+      <div><dt>Período</dt><dd>Fevereiro a dezembro de 2026</dd></div>
+      <div><dt>Locais</dt><dd>Ginásio CIE Prof. Maurinho Cassitas, sede da Associação e auditório da Secretaria Municipal de Esporte</dd></div>
+      <div><dt>Credenciamento</dt><dd>Secretaria de Estado do Esporte do Paraná — Edital nº 06/2025, código 91327</dd></div>
+    </dl>
+  </div>
+</section>
+
+<section class="sec dark" style="padding-top:0" id="orcamento">
+  <div class="wrap">
+    <div class="budget">
+      <div>
+        <p class="eyebrow">Orçamento</p>
+        <div class="amount"><small>Valor total do projeto</small>R$ 74.648,00</div>
+      </div>
+      <ul class="items">
+        <li><span>&#9812;</span><span>Tabuleiros e peças oficiais</span></li>
+        <li><span>&#9201;</span><span>Relógios digitais de competição</span></li>
+        <li><span>&#128085;</span><span>Uniformes de jogo dos atletas</span></li>
+        <li><span>&#128218;</span><span>Materiais para treinamentos e campeonatos</span></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="contrapartidas">
+  <div class="wrap">
+    <p class="eyebrow">Contrapartidas</p>
+    <h2>O que a sua empresa recebe.</h2>
+    <div class="grid g4">
+      <div class="card">
+        <span class="ico">&#127991;</span>
+        <h3>Marca na divulgação</h3>
+        <p>Logotipo exposto nos materiais de divulgação do projeto: banners de 1,5 m × 2,0 m e folhetos.</p>
+      </div>
+      <div class="card">
+        <span class="ico">&#128085;</span>
+        <h3>Marca nos uniformes</h3>
+        <p>Aplicação da marca nos uniformes de jogo usados pelos atletas nas competições.</p>
+      </div>
+      <div class="card">
+        <span class="ico">&#128248;</span>
+        <h3>Relatório final</h3>
+        <p>Relatório com imagens e vídeos das atividades realizadas, entregue a todas as empresas apoiadoras.</p>
+      </div>
+      <div class="card">
+        <span class="ico">&#10084;</span>
+        <h3>Apelo social real</h3>
+        <p>Vinculação a uma iniciativa que atende crianças, adolescentes e pessoas com deficiência do próprio município.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sec dark" id="associacao">
+  <div class="wrap">
+    <p class="eyebrow">Quem executa</p>
+    <h2>Associação Soberano Rei — Xadrez Arapongas</h2>
+    <p class="lead">Fundada em 2019 e sediada em Arapongas, a Associação forma atletas que já representam a cidade em competições nacionais e internacionais.</p>
+    <div class="grid g3">
+      <div class="card"><span class="ico">&#127758;</span><h3>Mundiais</h3><p>Atletas da Associação representando Arapongas em campeonatos mundiais da modalidade.</p></div>
+      <div class="card"><span class="ico">&#127942;</span><h3>Pan-Americanos</h3><p>Participação continental, com resultados que projetam o nome da cidade.</p></div>
+      <div class="card"><span class="ico">&#127937;</span><h3>Sul-Americanos</h3><p>Presença constante no circuito sul-americano de xadrez.</p></div>
+    </div>
+    <p class="lead" style="margin-top:34px">CNPJ 52.542.855/0001-48 · Presidência: Ana Carmen Ramazzotte Monteiro</p>
+  </div>
+</section>
+
+<section class="sec" id="participar">
+  <div class="wrap">
+    <p class="eyebrow">Passo a passo</p>
+    <h2>Da conversa à destinação, em quatro etapas.</h2>
+    <div class="steps">
+      <div class="step">
+        <div><h3>Conversa inicial</h3><p>Uma reunião presencial em Arapongas, na data que for mais conveniente, para apresentar o projeto em detalhes e definir o valor da destinação.</p></div>
+      </div>
+      <div class="step">
+        <div><h3>Materiais para o contador</h3><p>Enviamos os documentos oficiais do Proesporte, com o passo a passo do cadastro, diretamente ao setor contábil — e ficamos à disposição para falar com ele.</p></div>
+      </div>
+      <div class="step">
+        <div><h3>Cadastro e declaração</h3><p>A empresa faz o cadastro e a declaração no sistema da Secretaria de Estado do Esporte, indicando o projeto <b>91327 — Xadrez para Todos</b>.</p></div>
+      </div>
+      <div class="step">
+        <div><h3>Execução e prestação de contas</h3><p>O projeto roda de fevereiro a dezembro de 2026, com a marca aplicada nos materiais e uniformes, e a empresa recebe o relatório final com imagens e vídeos.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sec" style="padding-top:0" id="duvidas">
+  <div class="wrap">
+    <p class="eyebrow">Dúvidas do contador</p>
+    <h2>As perguntas que sempre aparecem.</h2>
+    <div class="faq">
+      <details open>
+        <summary>Quais empresas podem participar?</summary>
+        <p>Empresas contribuintes de ICMS, estabelecidas no Estado do Paraná e tributadas pelo regime de Lucro Real. Empresas do Simples Nacional ou do Lucro Presumido não se enquadram no Proesporte.</p>
+      </details>
+      <details>
+        <summary>Isso é uma despesa nova para a empresa?</summary>
+        <p>Não. O Proesporte permite destinar parte do valor de ICMS a recolher — recurso que já sairia da empresa — para um projeto esportivo credenciado pela Secretaria de Estado do Esporte.</p>
+      </details>
+      <details>
+        <summary>Qual o limite que podemos destinar?</summary>
+        <p>O percentual é definido pela legislação estadual do Proesporte e apurado conforme o ICMS a recolher da empresa. O próprio sistema da Secretaria indica o limite disponível no momento da declaração. Podemos passar os materiais oficiais e conversar diretamente com o seu contador.</p>
+      </details>
+      <details>
+        <summary>Como é feito o cadastro?</summary>
+        <p>Pelo sistema da Secretaria de Estado do Esporte do Paraná. Enviamos os materiais oficiais com o passo a passo completo para o setor contábil, e acompanhamos o processo com a empresa até a conclusão.</p>
+      </details>
+      <details>
+        <summary>O projeto está mesmo aprovado?</summary>
+        <p>Sim. O Xadrez para Todos foi aprovado e credenciado pela Secretaria de Estado do Esporte do Paraná pelo Edital nº 06/2025, sob o código 91327.</p>
+      </details>
+      <details>
+        <summary>Uma única empresa precisa bancar o valor todo?</summary>
+        <p>Não. O projeto pode ser apoiado por uma ou mais empresas incentivadoras até completar os R$ 74.648,00. Todas as apoiadoras recebem as contrapartidas de marca e o relatório final.</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<section class="sec final" id="contato">
+  <div class="wrap">
+    <p class="eyebrow">Vamos conversar</p>
+    <h2>Um café, e o seu ICMS vira tabuleiro.</h2>
+    <p class="lead">Estamos à disposição para uma reunião presencial na data que for mais conveniente, para apresentar o projeto e esclarecer qualquer dúvida — inclusive junto ao contador da empresa.</p>
+    <div class="cta-row">
+      <a class="btn btn-gold" href="https://wa.me/5543999519210?text=Ol%C3%A1%2C%20vi%20a%20p%C3%A1gina%20do%20projeto%20Xadrez%20para%20Todos%20e%20gostaria%20de%20saber%20mais%20sobre%20o%20Proesporte." target="_blank" rel="noopener">Chamar no WhatsApp</a>
+      <a class="btn btn-ghost" href="mailto:anaufpr@hotmail.com?subject=Proesporte%20-%20Xadrez%20para%20Todos%20(projeto%2091327)">Enviar e-mail</a>
+    </div>
+
+    <dl class="contact">
+      <a href="https://wa.me/5543999519210" target="_blank" rel="noopener">
+        <dt>Telefone / WhatsApp</dt><dd>(43) 99951-9210</dd>
+      </a>
+      <a href="mailto:anaufpr@hotmail.com">
+        <dt>E-mail</dt><dd>anaufpr@hotmail.com</dd>
+      </a>
+      <div>
+        <dt>Responsável</dt><dd>Ana Carmen Ramazzotte Monteiro<br><span style="font-size:13.5px;color:var(--muted-dark);font-weight:400">Presidente da Associação</span></dd>
+      </div>
+    </dl>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap foot">
+    <div>
+      <b style="color:var(--cream)">Associação Soberano Rei — Xadrez Arapongas</b><br>
+      CNPJ 52.542.855/0001-48 · Arapongas / PR · Fundada em 2019
+    </div>
+    <div>
+      Projeto <b style="color:var(--cream)">Xadrez para Todos</b> · Edital nº 06/2025 · Código 91327<br>
+      Credenciado pela Secretaria de Estado do Esporte do Paraná — Proesporte
+    </div>
+  </div>
+</footer>
+
+<a class="btn float" href="https://wa.me/5543999519210?text=Ol%C3%A1%2C%20vi%20a%20p%C3%A1gina%20do%20projeto%20Xadrez%20para%20Todos%20e%20gostaria%20de%20saber%20mais%20sobre%20o%20Proesporte." target="_blank" rel="noopener">&#128172; Falar agora</a>
+
+</body>
+</html>
